@@ -3,7 +3,7 @@ require('dotenv').config(); // Cargar variables de entorno
 const express = require('express');
 const mongoose = require('mongoose');
 
-const productosRoutes = require('./routes/Productos');
+const productosRoutes = require('./routes/productos');
 const paquetesRoutes = require('./routes/paquetes');
 const reservasRoutes = require('./routes/reservas');
 const contactosRoutes = require('./routes/contactos');

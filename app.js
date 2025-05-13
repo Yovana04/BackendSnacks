@@ -2,7 +2,6 @@ require('dotenv').config(); // Cargar variables de entorno
 
 const express = require('express');
 const mongoose = require('mongoose');
-const logger = require('./middlewares/logger');
 
 const productosRoutes = require('./routes/productos');
 const paquetesRoutes = require('./routes/paquetes');
@@ -12,7 +11,6 @@ const contactosRoutes = require('./routes/contactos');
 const app = express();
 
 app.use(express.json());
-app.use(logger);
 
 // Rutas
 app.use('/api/productos', productosRoutes);
